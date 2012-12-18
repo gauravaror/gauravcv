@@ -1,0 +1,116 @@
+%% start of file gaurav-cv.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2012 Gaurav Arora (gauravarora.daiict@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+
+\firstname{Gaurav}
+\familyname{Arora}
+\title{Curriculam Vitae}               % optional, remove the line if not wanted
+\address{1B/\ 11, Ramesh Nagar,New Delhi}{Delhi - 110015}    % optional, remove the line if not wanted
+\mobile{+91~99~80~186~112}                     % optional, remove the line if not wanted
+\email{gauravarora.daiict@gmail.com}
+\extrainfo{December 04, 1989}
+
+% optional, remove the line if not wanted
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2008--2012}{B.Tech, Information and Communication Technology}{Dhirubhai Ambani Institute of Information and Communication Technology}{Gandhinagar (Gujarat)}{CGPA \textit{8.07}}{}  % arguments 3 to 6 can be left empty
+\cventry{2006--2007}{XII,Central Board of Secondary Education}{Little Angels Public School}{Delhi}{\textit{76\%}}{}
+\cventry{2004--2005}{X,Central Board of Secondary Education}{Little Angels Public School}{Delhi}{\textit{72.2\%}}{}
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{August,2012--Present}{Software Engineer}{HP ISO}{Bangalore,India}{}{Working as a reliability engineer for HP cloud based ePrint solution to analyze and fix key issue with ePrint solution.}{}
+\cventry{May,2012--August,2012}{Contract Developer,Xapian}{Google Summer of Code}{}{}{Implementing Bi-gram Language Model and Evaluation framework with xapian search engine library}{}
+\cventry{2011--2012}{Research Assistant}{DA-IICT}{Gandhinagar Gujarat}{}{Developing gujarati langauge stemmer and evaluation tool for  sandhan,indian langauge search engine for CLIA Consortium,TDIL}
+\subsection{Miscellaneous}
+\cventry{Sept,2011--Dec,2011}{Developer Intern}{Dublin City University}{Ireland}{}{Delevlop a relevance judgement interface for Personalised Infromation Retreival Track at FIRE}
+
+\section{Projects}
+\space
+\subsection{BTech Project}
+\cventry{January,2012--May,2012}{Towards Building a Text Commitment Systems}{}{}{}{}
+%\cvitem{Title}{\emph{Towards Building a Text Commitment System}}
+\cvitem{Supervisors}{Prof. Prasenjit Majumder}
+\cvitem{Description}{System to simplify long,complex sentences into publically held beliefs was build as a basic component for Natural Language Understanding Systems with a recall of 0.23}
+\subsection{SMS FAQ Track FIRE}
+\cventry{October,2011--November,2011}{FAQ Retreival on Noisy SMS Queries}{}{}{}{}
+%\cvitem{Title}{\emph{SMS-Based FAQ Retrieval}}
+\cvitem{Supervisors}{Prof. Prasenjit Majumder}
+\cvitem{Description}{System was build with focus of challenge to search information using noisy SMS queries to search Frequently Asked Questions}
+\subsection{Research Internship}
+\cventry{May,2011--July,2011}{Question Answering for Machine Reading Evaluation}{}{}{}{}
+%\cvitem{Title}{\emph{}}
+\cvitem{Supervisors}{Prof. Prasenjit Majumder}
+\cvitem{Description}{Aim of the project was to build a baseline Question Answering system on comprehension passage using Information Retrieval and Machine Reading}
+\subsection{Semantic Search Challange}
+\cventry{May,2010--July2010}{Psuedo Document technique on Semantic Data}{}{}{}{}
+%\cvitem{Title}{\emph{}}
+\cvitem{Supervisors}{Prof. Prasenjit Majumder}
+\cvitem{Description}{Competition was organized by Yahoo Labs to build a Semantic Search Engine for data in N-Quad format.We used the Psuedo Document technique to apply Infromation Retrieval theory on semantic data.Task was to find a List of items related to query}
+\subsection{Internship with HCI Group,CMU}
+\cventry{May,2010--July2010}{Interactive Learning Game}{}{}{}{}
+%\cvitem{Title}{\emph{}}
+\cvitem{Supervisors}{Anuj Kumar, PHD Student, Carnegie Mellon University}
+\cvitem{Description}{Aim of the project was to build game in Java using SWING build quizzing interface to analyze object recognition power of rural childrens in diffrent region.It was deployed in school of Hydrabad to study usibility of application in Learning curve of students}
+
+\section{Lab Reports}
+\cvlistitem{Gaurav Arora, Prasenjit Mazumder: Cosine Similarity as Machine Reading Technique.CLEF (Notebook Papers/Labs/Workshop) 2011}
+\cvlistitem{Khushboo Shinghal,Gaurav Arora,Smita Kumai: FAQ Retrieval Against noisy queries FIRE 2011(Pending)}
+
+\section{Positions of Responsibility}
+ \cvlistitem{Chairperson, IEEE Student Branch, DA-IICT} 
+ \cvlistitem{Coordinator HRWIE, Synapse 2010, DA-IICT}
+ \cvlistitem{Membership Development Officer, IEEE Student Branch, DA-IICT}
+ 
+\section{Skills}
+\cvitemwithcomment{Expertise Area}{Information Retrieval, Algorithms, Database Managment}{}
+\cvitemwithcomment{Programming Language}{C, C++, J2SE}{}
+\cvitemwithcomment{Tools and Technologies}{Matlab, Pocketsphinx, Terrier}{}
+
+
+\section{Relevant Links}
+\cvitemwithcomment{Github}{ \href{https://github.com/samuelharden}{github:samuelharden} }{}
+\cvitemwithcomment{GSOC Page}{ \href{http://goo.gl/QUM8F}{xapian:samuelharden} }{}	
+
+\end{document}
+
+%% end of file `template.tex'.
